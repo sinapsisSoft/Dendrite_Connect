@@ -110,3 +110,12 @@ left: 45%;
 .my-custom-scrollbar::-webkit-scrollbar-track {
   border-radius: 10px;
 }
+
+.answerHidde {
+  opacity: 0;
+}
+
+.answerVisible {
+  transition: all 2s;
+  opacity: 1;
+}

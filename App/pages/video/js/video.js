@@ -9,9 +9,7 @@ function loadView() {
   loadPageView();
   getActionStorage();
   nobackbutton();    
-  video = document.getElementById("video1");
-  video.addEventListener("ended", lero); 
-  //setListener();
+  setListener();
 }
 
 //************SEARCH PROVIDER**************//
@@ -44,13 +42,20 @@ function getActionStorage() {
 function setListener(){    
   var video = document.querySelectorAll('video');
   for(i = 0; i < video.length; i++){
-    debugger;
-    //video[i].addEventListener("ended", viewModal("exampleModal",0), false); 
-    console.log(video[i].duration);
-    video[i].addEventListener("ended", lero(video[i].id,0), false); 
+    video[i].addEventListener("ended", activeModal, false); 
   }   
 }
 
-function lero(){
-    alert("video");
+function activeModal(){
+  viewModal(this.id+"Modal", 0);
+  let modalId = this.id;  
+  setTimeout(function(){showAnswer(modalId)},3000);
+}
+
+function showAnswer(bodyId){
+  let body = "bodyModal"+bodyId;
+  let button = "button"+bodyId;
+  document.getElementById(body).classList.remove("answerHidde");
+  document.getElementById(body).classList.add("answerVisible");
+  document.getElementById(button).disabled = false;
 }

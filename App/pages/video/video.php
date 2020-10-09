@@ -63,7 +63,7 @@ if (!isset($_SESSION['User'])) {
                   </div>
                   <video src="../../videos/video1.mp4" id="video1" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
-                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Ver pregunta</button>
+                  <button id="buttonvideo1" type="button" class="btn btn-success" data-toggle="modal" data-target="#video1Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ if (!isset($_SESSION['User'])) {
                   </div>
                   <video src="../../videos/video1.mp4" id="video2" width="100%" height="200" controls></video>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
-                  <button type="button" class="btn btn-warning">Ver pregunta</button>
+                  <button id="buttonvideo2" type="button" class="btn btn-warning" data-toggle="modal" data-target="#video2Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
             </div>
@@ -89,9 +89,9 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-danger text-uppercase mb-1">LABORATORIO 3</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <video src="../../videos/video1.mp4" id="video3" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
-                  <button type="button" class="btn btn-danger">Ver pregunta</button>
+                  <button id="buttonvideo3" type="button" class="btn btn-danger" data-toggle="modal" data-target="#video3Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
             </div>
@@ -103,9 +103,9 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-primary text-uppercase mb-1">LABORATORIO 4</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <video src="../../videos/video1.mp4" id="video4" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
-                  <button type="button" class="btn btn-primary">Ver pregunta</button>
+                  <button id="buttonvideo4" type="button" class="btn btn-primary" data-toggle="modal" data-target="#video4Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
             </div>
@@ -117,9 +117,9 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-secondary text-uppercase mb-1">LABORATORIO 5</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <video src="../../videos/video1.mp4" id="video5" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
-                  <button type="button" class="btn btn-secondary">Ver pregunta</button>
+                  <button id="buttonvideo5" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#video5Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
             </div>
@@ -131,9 +131,9 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-info text-uppercase mb-1">LABORATORIO 6</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <video src="../../videos/video1.mp4" id="video6" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
-                  <button type="button" class="btn btn-info">Ver pregunta</button>
+                  <button id="buttonvideo6" type="button" class="btn btn-info" data-toggle="modal" data-target="#video6Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
             </div>
@@ -146,29 +146,20 @@ if (!isset($_SESSION['User'])) {
 
       </div>
       <!-- End of Main Content -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+      <!-- Modal Video1 -->
+      <div class="modal fade" id="video1Modal" tabindex="-1" aria-labelledby="video1ModalLabel" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Responde la pregunta a continuación</h5>
+              <h5 class="modal-title" id="video1ModalLabel">Responde la pregunta a continuación</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">×</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>Escriba aquí la pregunta que deberá ser respondida
-              </p>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
-                <label class="form-check-label" for="exampleRadios1">
-                  Opción 1
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  Opción 2
-                </label>
+              <p>Escriba aquí la pregunta que deberá ser respondida del modal 1</p>
+              <div id="bodyModalvideo1" class="answerHidde">
+                <p>Aquí se muestra la respuesta del modal 1</p>
               </div>
             </div>
             <div class="modal-footer">
@@ -178,6 +169,127 @@ if (!isset($_SESSION['User'])) {
           </div>
         </div>
       </div>
+      <!-- End Modal Video1 -->
+      <!-- Modal Video2 -->
+      <div class="modal fade" id="video2Modal" tabindex="-1" aria-labelledby="video2ModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="video2ModalLabel">Responde la pregunta a continuación</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Escriba aquí la pregunta que deberá ser respondida  del modal 2</p>
+              <div id="bodyModalvideo2" class="answerHidde">
+                <p>Aquí se muestra la respuesta del modal 2</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Video2 -->
+      <!-- Modal Video3 -->
+      <div class="modal fade" id="video3Modal" tabindex="-1" aria-labelledby="video3ModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="video3ModalLabel">Responde la pregunta a continuación</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Escriba aquí la pregunta que deberá ser respondida del modal 3</p>
+              <div id="bodyModalvideo3" class="answerHidde">
+                <p>Aquí se muestra la respuesta del modal 3</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Video3 -->
+      <!-- Modal Video4 -->
+      <div class="modal fade" id="video4Modal" tabindex="-1" aria-labelledby="video4ModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="video4ModalLabel">Responde la pregunta a continuación</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Escriba aquí la pregunta que deberá ser respondida del modal 4</p>
+              <div id="bodyModalvideo4" class="answerHidde">
+                <p>Aquí se muestra la respuesta del modal 4</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Video4 -->
+      <!-- Modal Video5 -->
+      <div class="modal fade" id="video5Modal" tabindex="-1" aria-labelledby="video5ModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="video5ModalLabel">Responde la pregunta a continuación</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Escriba aquí la pregunta que deberá ser respondida del modal 5</p>
+              <div id="bodyModalvideo5" class="answerHidde">
+                <p>Aquí se muestra la respuesta del modal 5</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Video5 -->
+      <!-- Modal Video6 -->
+      <div class="modal fade" id="video6Modal" tabindex="-1" aria-labelledby="video6ModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="video6ModalLabel">Responde la pregunta a continuación</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Escriba aquí la pregunta que deberá ser respondida del modal 6</p>
+              <div id="bodyModalvideo6" class="answerHidde">
+                <p>Aquí se muestra la respuesta  del modal 6</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Video6 -->
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
@@ -203,11 +315,11 @@ if (!isset($_SESSION['User'])) {
   </a>
 
   <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="video1ModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">¿Seguro que quieres salir?</h5>
+          <h5 class="modal-title" id="video1ModalLabel">¿Seguro que quieres salir?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
