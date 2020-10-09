@@ -54,28 +54,12 @@
   <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
     <i class="fas fa-clipboard-list"></i>
-      <span>Seguimiento de procesos</span>
+      <span>La trivia del pulmón</span>
     </a>
     <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Seleccione:</h6>
-        <a class="collapse-item" href="../process/process.php?Proc_id=0">Nuevo proceso</a>
-        <a class="collapse-item" href="../process/dashboard.php">Procesos por cliente</a>
-      </div>
-    </div>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-    <i class="fas fa-clipboard-list"></i>
-      <span>Administración</span>
-    </a>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Seleccione:</h6>
-        <a class="collapse-item" href="../user/user.php">Usuarios</a>
-        <a class="collapse-item" href="../customer/customer.php">Clientes</a>
-        <a class="collapse-item" href="../process_type/process_type.php">Tipos de procesos</a>
-        <a class="collapse-item" href="../subprocess/subprocess.php">Subprocesos</a>
+        <a class="collapse-item" href="../video/video.php">Revisa los videos</a>
       </div>
     </div>
   </li>

@@ -61,9 +61,7 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-success text-uppercase mb-1">LABORATORIO 1</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                  <video src="../../videos/video1.mp4" id="video1" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Ver pregunta</button>
                 </div>
@@ -77,9 +75,7 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-warning text-uppercase mb-1">LABORATORIO 2</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                  <video src="../../videos/video1.mp4" id="video2" width="100%" height="200" controls></video>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button type="button" class="btn btn-warning">Ver pregunta</button>
                 </div>
@@ -93,9 +89,7 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-danger text-uppercase mb-1">LABORATORIO 3</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button type="button" class="btn btn-danger">Ver pregunta</button>
                 </div>
@@ -109,9 +103,7 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-primary text-uppercase mb-1">LABORATORIO 4</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button type="button" class="btn btn-primary">Ver pregunta</button>
                 </div>
@@ -125,9 +117,7 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-secondary text-uppercase mb-1">LABORATORIO 5</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button type="button" class="btn btn-secondary">Ver pregunta</button>
                 </div>
@@ -141,9 +131,7 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-info text-uppercase mb-1">LABORATORIO 6</div>
                     </div>
                   </div>
-                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/FmBlDrbWAHA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button type="button" class="btn btn-info">Ver pregunta</button>
                 </div>
@@ -158,8 +146,7 @@ if (!isset($_SESSION['User'])) {
 
       </div>
       <!-- End of Main Content -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;"
-        aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -172,8 +159,7 @@ if (!isset($_SESSION['User'])) {
               <p>Escriba aquí la pregunta que deberá ser respondida
               </p>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                  checked="">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
                 <label class="form-check-label" for="exampleRadios1">
                   Opción 1
                 </label>

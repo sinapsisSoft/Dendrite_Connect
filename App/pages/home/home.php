@@ -78,28 +78,9 @@ if (!isset($_SESSION['User'])) {
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text font-weight-bold text-success text-uppercase mb-1">SEGUIMIENTO DE PROCESOS <i class="fas fa-clipboard-list"></i></div>
+                      <div class="text font-weight-bold text-success text-uppercase mb-1">LA TRIVIA DEL PULMÓN <i class="fas fa-clipboard-list"></i></div>
                       <ul>
-                        <li><a  href="../process/process.php?Proc_id=0"><span>Nuevo proceso</span></a></li>
-                        <li><a  href="../process/dashboard.php"><span>Procesos por cliente</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text font-weight-bold text-warning text-uppercase mb-1">ADMINISTRACIÓN <i class="fas fa-clipboard-list"></i></div>
-                      <ul>
-                        <li><a  href="../user/user.php"><span>Usuarios</span></a></li>
-                        <li><a  href="../customer/customer.php"><span>Clientes</span></a></li>
-                        <li><a  href="../process_type/process_type.php"><span>Tipos de procesos</span></a></li>
-                        <li><a  href="../subprocess/subprocess.php"><span>Subprocesos</span></a></li>
-
+                        <li><a  href="../video/video.php"><span>Revisa los videos</span></a></li>
                       </ul>
                     </div>
                   </div>
