@@ -61,8 +61,7 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-success text-uppercase mb-1">LABORATORIO 1</div>
                     </div>
                   </div>
-                  <video src="../../videos/video1.mp4" id="video1" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
-                  <p>No olvides responder la pregunta cuando finalices el video</p>
+                  <video src="../../videos/video1.mp4" id="video1" width="100%" height="200" poster="../../img/logo_dendrite.png"></video>
                   <button id="buttonvideo1" type="button" class="btn btn-success" data-toggle="modal" data-target="#video1Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -75,8 +74,7 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-warning text-uppercase mb-1">LABORATORIO 2</div>
                     </div>
                   </div>
-                  <video src="../../videos/video1.mp4" id="video2" width="100%" height="200" controls></video>
-                  <p>No olvides responder la pregunta cuando finalices el video</p>
+                  <video src="../../videos/video1.mp4" id="video2" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
                   <button id="buttonvideo2" type="button" class="btn btn-warning" data-toggle="modal" data-target="#video2Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -90,7 +88,6 @@ if (!isset($_SESSION['User'])) {
                     </div>
                   </div>
                   <video src="../../videos/video1.mp4" id="video3" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
-                  <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button id="buttonvideo3" type="button" class="btn btn-danger" data-toggle="modal" data-target="#video3Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -104,7 +101,6 @@ if (!isset($_SESSION['User'])) {
                     </div>
                   </div>
                   <video src="../../videos/video1.mp4" id="video4" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
-                  <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button id="buttonvideo4" type="button" class="btn btn-primary" data-toggle="modal" data-target="#video4Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -118,7 +114,6 @@ if (!isset($_SESSION['User'])) {
                     </div>
                   </div>
                   <video src="../../videos/video1.mp4" id="video5" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
-                  <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button id="buttonvideo5" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#video5Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -132,7 +127,6 @@ if (!isset($_SESSION['User'])) {
                     </div>
                   </div>
                   <video src="../../videos/video1.mp4" id="video6" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
-                  <p>No olvides responder la pregunta cuando finalices el video</p>
                   <button id="buttonvideo6" type="button" class="btn btn-info" data-toggle="modal" data-target="#video6Modal" disabled>Ver respuesta</button>
                 </div>
               </div>

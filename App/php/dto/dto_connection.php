@@ -12,7 +12,7 @@
         $this->user="root";
         $this->password="";
         $this->server="localhost";
-        $this->database="processes";
+        $this->database="connect";
         }
         public function getUser()
         {

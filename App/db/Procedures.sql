@@ -279,6 +279,18 @@ BEGIN
 END$$
 DELIMITER ;
 
+DELIMITER $$
+DROP PROCEDURE IF EXISTS sp_video_insert$$
+CREATE PROCEDURE sp_video_insert(IN name VARCHAR(100), IN watched VARCHAR(1), IN idUser INT)
+BEGIN 
+	SET @exist = (SELECT COUNT(Video_id) FROM video WHERE Video_name = name && User_id = idUser);
+    IF @exist = 0 THEN
+    	INSERT INTO video (Video_name, Video_watched, User_id) VALUES (name, watched, idUser);
+    END IF;
+  SELECT ROW_COUNT(); 
+END$$
+DELIMITER ;
+
 CREATE EVENT IF NOT EXISTS new_user_clean ON SCHEDULE EVERY 1 DAY 
 STARTS '2020-03-01 00:00:01' 
 ON COMPLETION NOT PRESERVE ENABLE 
