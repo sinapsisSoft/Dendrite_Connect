@@ -39,24 +39,45 @@ class DaoVideo
   }
 
   // #Description : Function for select user
-  // public function selectUser($dataVideo)
-  // {
-  //   try {
-  //     $con = $this->objConntion->connect();
-  //     $con->query("SET NAMES 'utf8'");
-  //     if ($con != null) {
-  //       if ($result = $con->query("CALL sp_user_select_one('" . $dataVideo . "')")) {
-  //         while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-  //           $this->arrayResult[] = $row;
-  //         };
-  //         mysqli_free_result($result);
-  //       }
-  //     }
-  //     $con->close();
-  //   } catch (Exception $e) {
-  //     echo 'Exception captured: ', $e->getMessage(), "\n";
-  //   }
-  //   return json_encode($this->arrayResult);
-  // }
+  public function selectVideos($dataVideo)
+  {
+    try {
+      $con = $this->objConntion->connect();
+      $con->query("SET NAMES 'utf8'");
+      if ($con != null) {
+        if ($result = $con->query("CALL sp_video_all(" . $dataVideo . ")")) {
+          while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+            $this->arrayResult[] = $row;
+          };
+          mysqli_free_result($result);
+        }
+      }
+      $con->close();
+    } catch (Exception $e) {
+      echo 'Exception captured: ', $e->getMessage(), "\n";
+    }
+    return json_encode($this->arrayResult);
+  }
+
+  // #Description : Function for select score
+  public function selectScore($dataVideo)
+  {
+    try {
+      $con = $this->objConntion->connect();
+      $con->query("SET NAMES 'utf8'");
+      if ($con != null) {
+        if ($result = $con->query("CALL sp_video_score(" . $dataVideo . ")")) {
+          while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+            $this->arrayResult[] = $row;
+          };
+          mysqli_free_result($result);
+        }
+      }
+      $con->close();
+    } catch (Exception $e) {
+      echo 'Exception captured: ', $e->getMessage(), "\n";
+    }
+    return json_encode($this->arrayResult);
+  }
 }
 

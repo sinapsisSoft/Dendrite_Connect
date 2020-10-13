@@ -280,6 +280,22 @@ END$$
 DELIMITER ;
 
 DELIMITER $$
+DROP PROCEDURE IF EXISTS sp_video_all$$
+CREATE PROCEDURE sp_video_all(IN user INT)
+BEGIN 
+  SELECT Video_id, Video_name FROM video WHERE User_id = user;
+END$$
+DELIMITER ;
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS sp_video_score$$
+CREATE PROCEDURE sp_video_score(IN user INT)
+BEGIN 
+  SELECT COUNT(Video_name) AS Video_score FROM video WHERE User_id = user;
+END$$
+DELIMITER ;
+
+DELIMITER $$
 DROP PROCEDURE IF EXISTS sp_video_insert$$
 CREATE PROCEDURE sp_video_insert(IN name VARCHAR(100), IN watched VARCHAR(1), IN idUser INT)
 BEGIN 

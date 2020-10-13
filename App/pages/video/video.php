@@ -26,6 +26,9 @@ if (!isset($_SESSION['User'])) {
 <body id="page-top">
   <div class="loadPage" id="loadPage"></div>
   <input type="hidden" id="User_id">
+  <!--Alert-->
+  <div id="myAlert"></div>
+  <!--Alert-->
   <!-- Page Wrapper -->
   <div id="wrapper">
 
@@ -49,6 +52,22 @@ if (!isset($_SESSION['User'])) {
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">La trivia del pulmón </h1>
+            <div class="col-xl-2 col-md-2 mb-2">
+              <div class="card shadow h-100 py-2">
+                <div class="card-body score">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text font-weight-bold text-success text-uppercase mb-1" style="text-align: center;">TOTAL PUNTOS</div>
+                    </div>
+                  </div>
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div id="Video_score" class="text font-weight-bold text-secondary text-uppercase mb-1" style="text-align: center;">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
           </div>
           <!-- Content Row -->
@@ -61,7 +80,7 @@ if (!isset($_SESSION['User'])) {
                       <div class="text font-weight-bold text-success text-uppercase mb-1">LABORATORIO 1</div>
                     </div>
                   </div>
-                  <video src="../../videos/video1.mp4" id="video1" width="100%" height="200" poster="../../img/logo_dendrite.png"></video>
+                  <video src="../../videos/video1.mp4" id="video1" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
                   <button id="buttonvideo1" type="button" class="btn btn-success" data-toggle="modal" data-target="#video1Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -157,8 +176,7 @@ if (!isset($_SESSION['User'])) {
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -181,8 +199,7 @@ if (!isset($_SESSION['User'])) {
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -205,8 +222,7 @@ if (!isset($_SESSION['User'])) {
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -229,8 +245,7 @@ if (!isset($_SESSION['User'])) {
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -253,8 +268,7 @@ if (!isset($_SESSION['User'])) {
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -277,8 +291,7 @@ if (!isset($_SESSION['User'])) {
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>

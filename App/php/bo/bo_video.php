@@ -33,15 +33,25 @@ class BoVideo
     return $intValidate;
   }
 
-  // #Description: Function for select user
-  // public function selectUser($id)
-  // {
-  //   try {
-  //     echo $this->objDao->selectUser($id);
-  //   } catch (Exception $e) {
-  //     echo 'Exception captured: ', $e->getMessage(), "\n";
-  //   }
-  // }
+  #Description: Function for select show all videos
+  public function selectVideos($id)
+  {
+    try {
+      echo $this->objDao->selectVideos($id);
+    } catch (Exception $e) {
+      echo 'Exception captured: ', $e->getMessage(), "\n";
+    }
+  }
+
+  #Description: Function for get score
+  public function selectScore($id)
+  {
+    try {
+      echo $this->objDao->selectScore($id);
+    } catch (Exception $e) {
+      echo 'Exception captured: ', $e->getMessage(), "\n";
+    }
+  }
 }
 
 $obj = new BoVideo();
@@ -58,9 +68,12 @@ if (isset($data->POST)) {
 
 /**********READ AND CONSULT ************/
 if (isset($data->GET)) {
-  // if ($data->GET == "GET") {
-  //   echo $obj->selectUser($data->User_id);
-  // }
+  if ($data->GET == "GET") {
+    echo $obj->selectVideos($data->User_id);
+  }
+  if ($data->GET == "GET_SCORE") {
+    echo $obj->selectScore($data->User_id);
+  }
 }
 
 /********** PUT ************/
@@ -77,7 +90,7 @@ if (isset($data->DELETE)) {
 
 /**********************/
 
-echo $obj->newVideo("video6", "1", 3);
+//echo $obj->newVideo("video6", "1", 3);
 //echo $obj->selectNotifications(3);
 
 
