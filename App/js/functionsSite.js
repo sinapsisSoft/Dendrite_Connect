@@ -34,12 +34,14 @@ function getDataForm(idForm) {
 
     if (input) {
       if (objForm[i].type == "checkbox"){
-        if(objForm[i].checked){
-          jsonData += '"' + objForm[i].id + '":' + '"1",';
-        }
-        else {
-          jsonData += '"' + objForm[i].id + '":' + '"0",';
-        }
+        if (objForm[i].id.indexOf("_") >= 0) {
+          if (objForm[i].checked) {
+            jsonData += '"' + objForm[i].id + '":' + '"1",';
+          }
+          else {
+            jsonData += '"' + objForm[i].id + '":' + '"0",';
+          }
+        }        
       }
       else{
         jsonData += '"' + objForm[i].id + '":' + '"' + objForm[i].value + '",';

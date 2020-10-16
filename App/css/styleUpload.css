@@ -123,3 +123,40 @@ left: 45%;
 .score {
   padding: 5px;
 }
+
+.block {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0px 10px 10px 0;
+  width: 40px;
+  height: 50px;
+  border-radius: 3px;
+  background: #fafafa;
+  display: inline-block;
+  text-align: center;
+  line-height: 3;
+  color: #3b7353;
+  font-weight: bold;
+}
+
+.containerBlock {
+  width: auto;
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -360px;
+}
+
+@media only screen and (max-width:490px) {
+  .block {
+      margin: 0px 1px 10px 0;
+      width: 25px;
+      height: 30px;
+      line-height: 2.5;
+      font-size: small;
+  }
+  .containerBlock {
+      margin-left: -182px;
+  }
+}

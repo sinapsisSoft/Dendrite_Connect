@@ -31,7 +31,6 @@ class DaoUser
       }
       $con->close();
       $con = $this->objConntion->connect();
-
       if($row["return_value"] == "Update"){
         $this->intValidatio = 2;
       }
@@ -41,7 +40,7 @@ class DaoUser
       else if ($row["return_value"] == 'Registered'){
         $this->intValidatio = 4;
       }
-      else{
+      else{        
         if($con != null){
           $status = 1;
           $user_id = $row["return_value"];
@@ -188,9 +187,9 @@ class DaoUser
     $headboard .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
     $for = $email;    
     $to = $email;
-    $from = 'developer@sinapsissoft.com';
+    $from = 'info@dendrite.com.co';
     $headboard .= 'To:' . $to . "\r\n";
-    $headboard .= 'From:' . $from . "\r\n";
+    $headboard .= 'From:Dendrite Courses <' . $from . '>'."\r\n";
     $message = '    
     <html>
     <head>

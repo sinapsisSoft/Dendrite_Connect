@@ -304,6 +304,7 @@ if (!isset($_SESSION['User'])) {
   <script src="../../js/table.js"></script>
   <script src="../../js/selectList.js"></script>
   <script src="js/user.js"></script>
+  <script src="../../js/preLoadPage.js"></script>
   <script>
     window.onload = loadView
   </script>

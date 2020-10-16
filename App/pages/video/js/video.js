@@ -1,6 +1,5 @@
 //************ LOAD VIEW ******************/
 function loadView() {  
-  loadPageView();
   getActionStorage();
   nobackbutton();    
   setListener();
@@ -41,13 +40,16 @@ function setListener(){
   var video = document.querySelectorAll('video');
   for(i = 0; i < video.length; i++){
     video[i].addEventListener("ended", activeModal, false); 
+    //video[i].addEventListener("play", disableControls, false); 
   }   
 }
 
 function activeModal(){
   viewModal(this.id+"Modal", 0);
   let modalId = this.id;  
-  setTimeout(function(){showAnswer(modalId)},3000);
+  setTimeout(function(){showAnswer(modalId)},10000);
+  
+  //enableControls(this.id);
 }
 
 function showAnswer(bodyId){  
@@ -58,7 +60,6 @@ function showAnswer(bodyId){
 //**Function save video watched **/
 function setDataVideo(dataSetVideo) {
   try {
-    loadPageView();
     dataSetVideo = '{"POST":"POST",' + dataSetVideo + '}';
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", "../../php/bo/bo_video.php", true);
@@ -127,14 +128,13 @@ function getVideos(){
 
 function disableVideo(json){
   for(i = 0; i < json.length; i++){
-    videoDisable = document.getElementById(json[i]["Video_name"]);
-    disabledCard(videoDisable);
+    setVisibility(json[i]["Video_name"]);
     enableButton(0,json[i]["Video_name"]);
   }
 }
 
-function disabledCard(id){
-  id.controls = false;
+function setVisibility(id){
+  document.getElementById("visibility"+id).classList.add("text-success");
 }
 
 function getUserId(){
@@ -161,3 +161,13 @@ function setScore(json){
     document.getElementById(key).innerHTML = json[0][key];
   }
 }
+
+// function disableControls(){
+//   video = document.getElementById(this.id);
+//   video.controls = false;
+// }
+
+// function enableControls(id){
+//   video = document.getElementById(id);
+//   video.controls = true;
+// }

@@ -238,6 +238,7 @@ if (isset($data->DELETE)) {
 
 //echo $obj->newUser("Felipe Chitiva", "1026292066", "pipechitiva@gmail.com", "Tester",6,"gato0814", "3118304742",0,1,1,1,"http://localhost/projects/Dendrite/");
 //echo $obj->selectNotifications(3);
+//echo $obj->newUser("Adar García","8989898989898","l.grisales@sinapsist.com.co","Usuario Curso",6,"Lau1234","3123718171",0,1,1,1,"http://localhost/project/Dendrite_Connect/App");
 
 
 

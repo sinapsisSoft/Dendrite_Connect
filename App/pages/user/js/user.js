@@ -5,21 +5,18 @@
 //Description : funtions user
 /**Function add Usuario**/
 var bolValidatoEdit = true;
-function setDatUser(dataSetUser) {
-    
+function setDatUser(dataSetUser) {    
     try {
         loadPageView();
         let url =  getUrl();
         dataSetUser = '{"POST":"POST",' + dataSetUser + ',"Url":"' + url + '"}';
-        //debugger;
-        console.log(dataSetUser);
+        console.log(dataSetUser);        
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "../../php/bo/bo_user.php", true);
         xhttp.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
         xhttp.onreadystatechange = function () {
           if (this.readyState === 4 && this.status === 200) {
-            console.log(xhttp.responseText);
-           
+            console.log(xhttp.responseText);         
             if (xhttp.responseText == 1) {
                 //debugger;
               viewModal('userModal', 1);
@@ -56,7 +53,6 @@ function setDatUser(dataSetUser) {
             enableScroll(); 
           }
         }
-        //debugger;
         xhttp.send(dataSetUser);
     } catch (error) {
         console.error(error);
@@ -178,9 +174,7 @@ function passwordDataForm(option) {
 }
 
 function confirmPass() {
-
-    try {
-        
+    try {        
         let message = document.getElementById("alertPassword"); 
         message.classList.remove("alertHidden");
         if (bolValidatoEdit) {
@@ -253,10 +247,14 @@ function validationView(dataValidation){
   let message = "";
   if(dataValidation){
     message = "Su usuario ha sido activado exitosamente";
+    button = '<div class="d-flex justify-content-center mt-3 login_container col-12">'
+    +' <a href="../login/login.html" class="btn login_btn">Ingresar</a>'
+    +'</div>';
   }else{
     message = "Hubo un problema activado su usuario";
   }
   document.getElementById("message").innerHTML = message;
+  document.getElementById("contMessage").innerHTML += button;
 }
 
 $('#defaultUnchecked').click(function () {

@@ -119,7 +119,6 @@ function setRecoveryPassword(dataSetUser) {
                var jsonObj = JSON.parse(xhttp.responseText);
                 console.log(jsonObj);
                 if ((jsonObj[0]["User_id"] != undefined) && (jsonObj[0]["User_id"]!="0")) {
-
                     createModalAlert("Se ha enviado un correo electrónico para el cambio de contraseña", 1, 6000);
                     locationPage("../login/login.html",2000);
                   

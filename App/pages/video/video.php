@@ -58,6 +58,7 @@ if (!isset($_SESSION['User'])) {
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text font-weight-bold text-success text-uppercase mb-1" style="text-align: center;">TOTAL PUNTOS</div>
+                      <div id="counter"></div>
                     </div>
                   </div>
                   <div class="row no-gutters align-items-center">
@@ -77,10 +78,10 @@ if (!isset($_SESSION['User'])) {
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text font-weight-bold text-success text-uppercase mb-1">LABORATORIO 1</div>
+                      <div id="visibilityvideo1" class="font-weight-bold"><span class="material-icons">visibility</span></div>
                     </div>
                   </div>
-                  <video src="../../videos/video1.mp4" id="video1" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
+                  <video src="../../videos/videoAZ.mp4" id="video1" width="100%" height="200" controls poster="../../img/videos/LogoAZ.png"></video>
                   <button id="buttonvideo1" type="button" class="btn btn-success" data-toggle="modal" data-target="#video1Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -90,10 +91,10 @@ if (!isset($_SESSION['User'])) {
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text font-weight-bold text-warning text-uppercase mb-1">LABORATORIO 2</div>
+                      <div id="visibilityvideo2" class="font-weight-bold"><span class="material-icons">visibility</span></div>
                     </div>
                   </div>
-                  <video src="../../videos/video1.mp4" id="video2" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
+                  <video src="../../videos/videoBI.mp4" id="video2" width="100%" height="200" controls poster="../../img/videos/LogoBI.png"></video>
                   <button id="buttonvideo2" type="button" class="btn btn-warning" data-toggle="modal" data-target="#video2Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -103,10 +104,10 @@ if (!isset($_SESSION['User'])) {
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text font-weight-bold text-danger text-uppercase mb-1">LABORATORIO 3</div>
+                      <div id="visibilityvideo3" class="font-weight-bold"><span class="material-icons">visibility</span></div>
                     </div>
                   </div>
-                  <video src="../../videos/video1.mp4" id="video3" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
+                  <video src="../../videos/videoGSK.mp4" id="video3" width="100%" height="200" controls poster="../../img/videos/LogoGSK.png"></video>
                   <button id="buttonvideo3" type="button" class="btn btn-danger" data-toggle="modal" data-target="#video3Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -116,10 +117,10 @@ if (!isset($_SESSION['User'])) {
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text font-weight-bold text-primary text-uppercase mb-1">LABORATORIO 4</div>
+                      <div id="visibilityvideo4" class="font-weight-bold"><span class="material-icons">visibility</span></div>
                     </div>
                   </div>
-                  <video src="../../videos/video1.mp4" id="video4" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
+                  <video src="../../videos/videoNovartis.mp4" id="video4" width="100%" height="200" controls poster="../../img/videos/LogoNovartis.png"></video>
                   <button id="buttonvideo4" type="button" class="btn btn-primary" data-toggle="modal" data-target="#video4Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -129,10 +130,10 @@ if (!isset($_SESSION['User'])) {
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text font-weight-bold text-secondary text-uppercase mb-1">LABORATORIO 5</div>
+                      <div id="visibilityvideo5" class="font-weight-bold"><span class="material-icons">visibility</span></div>
                     </div>
                   </div>
-                  <video src="../../videos/video1.mp4" id="video5" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
+                  <video src="../../videos/videoPfizer.mp4" id="video5" width="100%" height="200" controls poster="../../img/videos/LogoPfizer.png"></video>
                   <button id="buttonvideo5" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#video5Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
@@ -142,18 +143,28 @@ if (!isset($_SESSION['User'])) {
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text font-weight-bold text-info text-uppercase mb-1">LABORATORIO 6</div>
+                      <div id="visibilityvideo6" class="font-weight-bold"><span class="material-icons">visibility</span></div>
                     </div>
                   </div>
-                  <video src="../../videos/video1.mp4" id="video6" width="100%" height="200" controls poster="../../img/logo_dendrite.png"></video>
+                  <video src="../../videos/videoAbbott.mp4" id="video6" width="100%" height="200" controls poster="../../img/videos/LogoAbbott.png"></video>
                   <button id="buttonvideo6" type="button" class="btn btn-info" data-toggle="modal" data-target="#video6Modal" disabled>Ver respuesta</button>
                 </div>
               </div>
             </div>
+            <div class="col-xl-4 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div id="visibilityvideo7" class="font-weight-bold"><span class="material-icons">visibility</span></div>
+                    </div>
+                  </div>
+                  <video src="../../videos/videoSanofi.mp4" id="video7" width="100%" height="200" controls poster="../../img/videos/LogoSanofi.png"></video>
+                  <button id="buttonvideo7" type="button" class="btn btn-success" data-toggle="modal" data-target="#video7Modal" disabled>Ver respuesta</button>
+                </div>
+              </div>
+            </div>
           </div>
-
-
-
         </div>
         <!-- /.container-fluid -->
 
@@ -170,9 +181,9 @@ if (!isset($_SESSION['User'])) {
               </button>
             </div>
             <div class="modal-body">
-              <p>Escriba aquí la pregunta que deberá ser respondida del modal 1</p>
+              <p>Un test corto e integral para medir el impacto sintomático y el estado de salud por la EPOC es: </p>
               <div id="bodyModalvideo1" class="answerHidde">
-                <p>Aquí se muestra la respuesta del modal 1</p>
+                <p><strong>El CAT (COPD Assessment Test)<br>(Fuente: GOLD 2018)</strong></p>
               </div>
             </div>
             <div class="modal-footer">
@@ -193,9 +204,10 @@ if (!isset($_SESSION['User'])) {
               </button>
             </div>
             <div class="modal-body">
-              <p>Escriba aquí la pregunta que deberá ser respondida  del modal 2</p>
+              <p>Los fenotipos más comunes de asma, además de Asma alérgica y Asma no alérgica, son:</p>
               <div id="bodyModalvideo2" class="answerHidde">
-                <p>Aquí se muestra la respuesta del modal 2</p>
+                <p><strong>Asma de inicio tardío, Asma con obstrucción fija de la vía aérea y Asma con obesidad 
+                  <br>(Fuente: GINA 2018)</strong></p>
               </div>
             </div>
             <div class="modal-footer">
@@ -216,9 +228,9 @@ if (!isset($_SESSION['User'])) {
               </button>
             </div>
             <div class="modal-body">
-              <p>Escriba aquí la pregunta que deberá ser respondida del modal 3</p>
+              <p>Un test positivo de reversibilidad en adultos con Asma, incluye:</p>
               <div id="bodyModalvideo3" class="answerHidde">
-                <p>Aquí se muestra la respuesta del modal 3</p>
+                <p><strong>Mejoría posbroncodilatador del VEF1 de más de 200 ml y más de 12% del valor basal <br>(Fuente: GINA 2018)</strong></p>
               </div>
             </div>
             <div class="modal-footer">
@@ -239,9 +251,9 @@ if (!isset($_SESSION['User'])) {
               </button>
             </div>
             <div class="modal-body">
-              <p>Escriba aquí la pregunta que deberá ser respondida del modal 4</p>
+              <p>¿A qué grupo de la Clasificación de la Hipertensión Pulmonar pertenece la Hipertensión Pulmonar secundaria a EPOC?</p>
               <div id="bodyModalvideo4" class="answerHidde">
-                <p>Aquí se muestra la respuesta del modal 4</p>
+                <p><strong>Pertenece al Grupo 3 <br>(Fuente: ESC/ERS Guías de Hipertensión Pulmonar EHJ 2016)</strong></p>
               </div>
             </div>
             <div class="modal-footer">
@@ -262,9 +274,9 @@ if (!isset($_SESSION['User'])) {
               </button>
             </div>
             <div class="modal-body">
-              <p>Escriba aquí la pregunta que deberá ser respondida del modal 5</p>
+              <p>¿Qué método de clasificación de gravedad de la Neumonía Adquirida en la Comunidad (NAC) se recomienda utilizar en Colombia? </p>
               <div id="bodyModalvideo5" class="answerHidde">
-                <p>Aquí se muestra la respuesta del modal 5</p>
+                <p><strong> Las escalas CURB-65 o CRB-65 <br>(Fuente: Recomendaciones para el Diagnóstico, tratamiento y prevención de la NAC en Colombia 2013)</strong></p>
               </div>
             </div>
             <div class="modal-footer">
@@ -285,9 +297,9 @@ if (!isset($_SESSION['User'])) {
               </button>
             </div>
             <div class="modal-body">
-              <p>Escriba aquí la pregunta que deberá ser respondida del modal 6</p>
+              <p>¿Cuál es el tratamiento recomendado para la Infección Tuberculosa Latente (ITL)?</p>
               <div id="bodyModalvideo6" class="answerHidde">
-                <p>Aquí se muestra la respuesta  del modal 6</p>
+                <p><strong>Isoniacida diariamente por 6 meses <br>(Fuente: Guías de Promoción de la salud y prevención de enfermedades en la salud pública, Ministerio de la Protección Social, Colombia 2007)</strong></p>
               </div>
             </div>
             <div class="modal-footer">
@@ -297,6 +309,29 @@ if (!isset($_SESSION['User'])) {
         </div>
       </div>
       <!-- End Modal Video6 -->
+      <!-- Modal Video7 -->
+      <div class="modal fade" id="video7Modal" tabindex="-1" aria-labelledby="video7ModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="video7ModalLabel">Responde la pregunta a continuación</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>¿Cuál es la recomendación para el seguimiento de un nódulo sólido indeterminado estable por 2 años?</p>
+              <div id="bodyModalvideo7" class="answerHidde">
+                <p><strong>No requiere más seguimiento <br>(Fuente: Guías CHEST para el manejo del Cáncer Pulmonar 2013)</strong></p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Video7 -->
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
@@ -360,6 +395,7 @@ if (!isset($_SESSION['User'])) {
   <!-- Page functión scripts -->
   <script src="../../js/functionsSite.js"></script>
   <script src="../../js/Storage.js"></script>
+  <script src="../../js/preLoadPage.js"></script>
   <script src="js/video.js"></script>
   <script>
     window.onload = loadView

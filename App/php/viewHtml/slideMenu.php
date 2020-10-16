@@ -3,7 +3,7 @@
   <!-- Sidebar - Brand -->
   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../home/home.php">
     <div class="sidebar-brand-icon ">
-      <img src="../../img/logo-white.png" width="100" alt="Sinapsis Technologies">
+      <img src="../../img/videos/LogoAsoneumocito.png" width="65">
     </div>
     <div class="sidebar-brand-text mx-3">
       <img src="../../img/logo_dendrite.png" alt="Dendrite" width="100">
