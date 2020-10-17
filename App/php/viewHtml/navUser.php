@@ -6,7 +6,7 @@
 </button>
 
 <!-- Topbar Search -->
-<form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+<!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
   <div class="input-group">
     <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
     <div class="input-group-append">
@@ -15,7 +15,7 @@
       </button>
     </div>
   </div>
-</form>
+</form> -->
 
 <!-- Topbar Navbar -->
 <ul class="navbar-nav ml-auto">
@@ -41,18 +41,18 @@
   </li>
 
   <!-- Nav Item - Alerts -->
-  <li class="nav-item dropdown no-arrow mx-1">
+  <!-- <li class="nav-item dropdown no-arrow mx-1">
     <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-bell fa-fw"></i>
-      <!-- Counter - Alerts -->
+      Counter - Alerts
       <span id="notificationCount" class="badge badge-danger badge-counter">0</span>
     </a>
-    <!-- Dropdown - Alerts -->
+    Dropdown - Alerts
     <div id="notifications" class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
       <h6 class="dropdown-header">
         Centro de Alertas
       </h6>
-      <!-- <a class="dropdown-item d-flex align-items-center" href="#">
+      <a class="dropdown-item d-flex align-items-center" href="#">
         <div class="mr-3">
           <div class="icon-circle bg-primary">
             <i class="fas fa-file-alt text-white"></i>
@@ -85,22 +85,22 @@
           Spending Alert: We've noticed unusually high spending for your account.
         </div>
       </a>-->
-      <!-- <a class="dropdown-item text-center small text-gray-500" href="#">Ver más Alertas</a> -->
+      <!-- <a class="dropdown-item text-center small text-gray-500" href="#">Ver más Alertas</a>
     </div>
-  </li>
+  </li>-->
 
   <!-- Nav Item - Messages -->
-  <li class="nav-item dropdown no-arrow mx-1">
+  <!-- <li class="nav-item dropdown no-arrow mx-1">
     <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <i class="fas fa-envelope fa-fw"></i>
-      <!-- Counter - Messages -->
+      Counter - Messages
       <span class="badge badge-danger badge-counter">0</span>
     </a>
-    <!-- Dropdown - Messages -->
+    Dropdown - Messages
     <div id="messages" class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
       <h6 class="dropdown-header">
         Centro de Mensajes
-      </h6>
+      </h6> -->
       <!--<a class="dropdown-item d-flex align-items-center" href="#">
         <div class="dropdown-list-image mr-3">
           <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
@@ -141,9 +141,9 @@
           <div class="small text-gray-500">Chicken the Dog · 2w</div>
         </div>
       </a>-->
-      <a class="dropdown-item text-center small text-gray-500" href="#">Leer más mensajes</a>
+      <!-- <a class="dropdown-item text-center small text-gray-500" href="#">Leer más mensajes</a>
     </div>
-  </li>
+  </li> -->
 
   <div class="topbar-divider d-none d-sm-block"></div>
 

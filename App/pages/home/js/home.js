@@ -53,8 +53,8 @@ function getActionStorage() {
     //console.log(json);
     if (json !== null) {
     getDataUserId(json[0]["User_id"]);
-    getNotification(json[0]["User_id"]);
-    messageList();
+    //getNotification(json[0]["User_id"]);
+    //messageList();
     }else{
         locationLogin();
     }

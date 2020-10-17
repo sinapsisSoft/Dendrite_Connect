@@ -304,16 +304,16 @@ function requireds (className){
     var y = window.scrollY;
     window.onscroll = function(){ window.scrollTo(x, y) };
 }
-function loadPageView(){
-  let obj=document.getElementById("loadPage");
-  obj.style.display="block";
-  let divObj="";
-  for(let i=0;i<4;i++){
-    divObj +='<div class="block"></div>';
-  }
-  obj.innerHTML=divObj;
-  disableScroll();  
-}
+// function loadPageView(){
+//   let obj=document.getElementById("loadPage");
+//   obj.style.display="block";
+//   let divObj="";
+//   for(let i=0;i<4;i++){
+//     divObj +='<div class="block"></div>';
+//   }
+//   obj.innerHTML=divObj;
+//   disableScroll();  
+// }
 function enableScroll(){  
   window.onscroll = null;
   document.getElementById("loadPage").style.display="none";

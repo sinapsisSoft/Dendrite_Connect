@@ -37,7 +37,7 @@ if (!isset($_SESSION['User'])) {
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
-      <div id="content">
+      <div id="content" style="background: url(../../img/videos/MarcaAgua3.png) no-repeat center center fixed;">
 
         <!-- Topbar -->
         <?php include("../../php/viewHtml/navUser.php") ?>
